@@ -7,6 +7,7 @@ import { ProductMainComponent } from './product-main/product-main.component';
 import { ProductFooterComponent } from './product-footer/product-footer.component';
 import { ProductTitleComponent } from './product-main/product-title/product-title.component';
 import { ProductListComponent } from './product-main/product-list/product-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductListComponent } from './product-main/product-list/product-list.c
     ProductListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

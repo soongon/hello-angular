@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductTitleComponent {
 
   title: string = '상품목록잉;요';
+  textData: string = 'kim soongon,,,,,';
 
   buttonClicked() {
     console.log('button clicked..');
