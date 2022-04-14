@@ -1,5 +1,8 @@
+<p>
+  <button (click)="getDataFromServer()">get data</button>
+</p>
 <ul>
-    <li>{{ products[0] }}</li>
-    <li>{{ products[1] }}</li>
-    <li>{{ products[2] }}</li>
-  </ul>
+    <li *ngFor="let post of products">
+      <p>글번호: {{ post }}</p>
+    </li>
+</ul>

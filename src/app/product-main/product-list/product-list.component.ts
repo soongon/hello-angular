@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ProductApiService } from 'src/app/services/product-api.service';
 
 @Component({
   selector: 'app-product-list',
@@ -7,6 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListComponent {
   
-  products = ['아이폰13', '갤럭시22', '모니터27'];
+  products: object[] = [];
+
+  constructor(private service: ProductApiService) {}
+
+  getDataFromServer() {
+    this.service.getPostFromFakeServer()
+      .subscribe(res => {
+        console.log(res);
+        this.products = res;
+      });
+  }
 
 }
