@@ -3,6 +3,7 @@
 </p>
 <ul>
     <li *ngFor="let post of products">
-      <p>글번호: {{ post }}</p>
+      <p>글번호: {{ post.id }}</p>
+      {{ post.title }}
     </li>
 </ul>
