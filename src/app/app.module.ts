@@ -2,10 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ProductHeaderComponent } from './product-header/product-header.component';
+import { ProductMainComponent } from './product-main/product-main.component';
+import { ProductFooterComponent } from './product-footer/product-footer.component';
+import { ProductTitleComponent } from './product-main/product-title/product-title.component';
+import { ProductListComponent } from './product-main/product-list/product-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductHeaderComponent,
+    ProductMainComponent,
+    ProductFooterComponent,
+    ProductTitleComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule
